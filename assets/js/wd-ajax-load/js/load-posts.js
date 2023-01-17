@@ -11,20 +11,26 @@ jQuery(document).ready(function ($) {
     );
 
     var $post_id = $(this).attr("id");
-
+    console.log($post_id);
     // Show that we're working.
     $("#project-info").html(
       '<div class="text-center"><div class="ajax-progress ajax-progress-throbber"><div class="throbber">&nbsp;</div></div></div>'
     );
 
-    $("#project-info").load("?p=" + $post_id + " #content", function () {
-      $("html, body, .page-section-current").animate({ scrollTop: "0" }, 1000);
-      $("#project-info").removeClass("hide");
-      $("#project-info").css("display", "block");
-      $("body").css("cursor", "auto");
+    $("#project-info").load(
+      "?p=" + $post_id + " #content-" + $post_id,
+      function () {
+        $("html, body, .page-section-current").animate(
+          { scrollTop: "0" },
+          1000
+        );
+        $("#project-info").removeClass("hide");
+        $("#project-info").css("display", "block");
+        $("body").css("cursor", "auto");
 
-      $(that).find(".ajax-progress-throbber").remove();
-    });
+        $(that).find(".ajax-progress-throbber").remove();
+      }
+    );
     return false;
   });
 });
