@@ -907,6 +907,7 @@ li.portfolio-item {
   background: rgba(255, 255, 255, 0.5);
 }
 .portfolio-item figure {
+  border: 1px solid #8b8a8a;
   margin: 0 0 20px;
   max-height: 235px;
   overflow: hidden;
@@ -914,25 +915,25 @@ li.portfolio-item {
 }
 .portfolio-item figure:before {
   border-top: 190px solid #0055aa;
-  content: "";
+  /* content: ""; */
   display: none;
   opacity: 0.5;
   position: absolute;
   width: 100%;
 }
-.portfolio-item:hover figure:before {
-  display: block;
-}
+/* .portfolio-item:hover figure:before {
+  display: block; 
+} */
 
 figcaption {
-  display: none;
+  /* display: none; */
   height: 0;
   overflow: hidden;
-  transition: all 0.2s ease 0.5s;
+  /* transition: all 0.2s ease 0.5s; */
 }
-.article.portfolio-item:hover figcaption {
-  background: none repeat scroll 0 0 #ff0044;
-  display: block;
+.article.portfolio-item figcaption {
+  background: none repeat scroll 0 0 #f5f5f5;
+  /* display: block; */
   bottom: 0;
   height: auto;
   position: absolute;
@@ -1176,6 +1177,10 @@ body.error404 a {
   position: relative;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+}
+
+.flex-item p {
+  margin-top: 70px;
 }
 
 #flex1 {

@@ -43,7 +43,8 @@ body {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, Verdana,
     sans-serif;
   font-size: 14px;
-  color: #666;
+  color: #333;
+  background-image: url("https://img.freepik.com/free-vector/blue-abstract-gradient-wave-vector-background_53876-111548.jpg?w=996&t=st=1674191091~exp=1674191691~hmac=0e090eb9eb86b7a0e06ebe04b6c45e5cee2f3fc1f28eb55c3aac9286c79079dcs");
   line-height: 1.5em;
 }
 h1,
@@ -53,11 +54,12 @@ h4,
 h5 {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, Verdana,
     sans-serif;
+
   font-weight: 300;
   color: inherit;
 }
 a {
-  color: #555;
+  color: #777;
 }
 blockquote {
   border-left: 1px solid rgba(255, 255, 255, 0.5);
