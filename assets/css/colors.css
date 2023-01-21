@@ -59,6 +59,7 @@
   background: #999;
   color: #ffffff;
 }
+
 .page-section-41,
 .menu-list li a .color--41 {
   background: #8224e3;
@@ -70,6 +71,7 @@
   color: #ffffff;
 }
 .page-section.home-page {
+  /* background: url(https://mayocollege.com/wp-content/uploads/2021/09/mayo-banner-4-1536x864.jpg); */
   background: url(../images/bg-3.jpg) #3495f3;
   color: #ffffff;
   background-size: cover;
