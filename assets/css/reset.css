@@ -44,8 +44,10 @@ body {
     sans-serif;
   font-size: 14px;
   color: #333;
+  /* background-image: url("https://media.istockphoto.com/id/624878906/photo/triangular-abstract-background.jpg?s=170667a&w=0&k=20&c=VnsiNjJzorBBzZYJdxbUpOZT-pJnLoVaaPHnxths0Bg="); */
   background-image: url("https://img.freepik.com/free-vector/blue-abstract-gradient-wave-vector-background_53876-111548.jpg?w=996&t=st=1674191091~exp=1674191691~hmac=0e090eb9eb86b7a0e06ebe04b6c45e5cee2f3fc1f28eb55c3aac9286c79079dcs");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   line-height: 1.5em;
 }
@@ -375,7 +377,7 @@ table {
   border-spacing: 0;
 }
 table tr th {
-  background: none repeat scroll 0 0 #8a8a8a;
+  /* background: none repeat scroll 0 0 #8a8a8a; */
   color: #ffffff;
   font-size: 0.9em;
   font-weight: 600;
@@ -411,7 +413,8 @@ button.small:focus,
 button,
 .button,
 #wp-calendar tfoot tr td {
-  background: #ee4400;
+  background: #888;
+  margin-top: 13px;
 }
 article.type-post .post-title a,
 .single-post .post-title,
