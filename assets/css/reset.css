@@ -11,7 +11,6 @@
 ::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(0, 0, 0, 0.4);
 }
-
 html {
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
@@ -457,14 +456,14 @@ iframe {
 }
 .pricing-table .title {
   background-color: rgba(255, 255, 255, 0.15);
-  color: #fff;
+  color: black;
   font-size: 1.2em;
 }
 .pricing-table.featured {
   transform: scale(1.02);
 }
 .pricing-table.featured .title {
-  background: #ee4400;
+  background: #d2e5ef;
 }
 .pricing-table .price {
   background-color: rgba(255, 255, 255, 0.9);
