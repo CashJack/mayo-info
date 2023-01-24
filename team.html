@@ -19,6 +19,8 @@
   <link rel='stylesheet' id='reponsive-css' href='assets/css/reponsive.css' type='text/css' media='all' />
   <link rel='stylesheet' id='animate-custom-css' href='assets/css/animate-custom.css' type='text/css' media='all' />
   <script src="https://kit.fontawesome.com/709843e4b7.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -83,12 +85,34 @@
       </div>
     </div>
 
-    <div class="card mb-3">
-      <img class="card-img-top" src="assets/images/sr-staff.jpg" alt="Card image cap">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="assets/images/sr-staff.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/jr-school.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/images/sr-staff.jpg" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-
     <div class="row clear-fix">
-      <h3 class="text-center small-title">Academic Staff</h3>
+      <h3 class="text-center small-title">ACADEMIC HEADS</h3>
       <ul class="small-block-grid-1 large-block-grid-3 text-center">
         <li>
           <div class="team-member-item">
@@ -96,8 +120,9 @@
               <img width="400" height="300" src="assets/images/director.png" alt="doctor">
             </div>
             <h4 class="team-member-name">Lt Gen SH Kulkarni</h4>
-            <h4>PVSM, AVSM, VSM** (RETD)</h4>
-            <h4>Director MCGC</h4>
+            <h4>PVSM, AVSM, VSM** (RETD)
+              <br> Director MCGC
+            </h4>
           </div>
         </li>
         <li>
@@ -106,312 +131,1188 @@
               <img width="400" height="300" src="assets/images/hmss.png" alt="Smiling man">
             </div>
             <h4 class="team-member-name">Mr Navin Kumar Dixit</h4>
-            <h4>Head Master Sr School</h4><br>
+            <h4>Head Master <br> Senior School</h4>
           </div>
         </li>
         <li>
           <div class="team-member-item">
             <div class="team-member-picture">
-              <img width="400" height="300" src="assets/images/hmjs.png" alt="College student">
+              <img width="400" height="300" src="assets/images/hmjs1.jpg" alt="College student">
             </div>
             <h4 class="team-member-name">Mr Pramod Kumar Chaturvedi</h4>
-            <h4>Head Master Jr School</h4><br>
+            <h4>Head Master <br> Junior School</h4>
 
           </div>
         </li>
       </ul>
     </div>
     <div id="accordion" class="accordion">
-      <div class="card mb-0">
-        <!-- <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+      <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+        <a class="card-title">
+          SENIOR SCHOOL
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse " data-parent="#accordion">
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#accountancy" href="#accountancy">
           <a class="card-title">
-            ACADEMIC STAFF
+            ACCOUNTANCY & COMMERCE
           </a>
         </div>
-        <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
-          <div class="card-group">
-            <div class="card">
-              <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/director-sir.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Lt Gen SH Kulkarni <br>
-                  PVSM, AVSM, VSM** (RETD)</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit longer.</p>
-                
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="https://cashjack.github.io/metro-info/assets/images/hmss.png"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Mr Navin Kumar Dixit <br>
-                  Head Master Sr School</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to
-                  additional content.</p>
-                
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="https://cashjack.github.io/metro-info/assets/images/hmjs.png"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Mr Pramod Kumar Chaturvedi <br>
-                  Head Master Jr School</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This card has even longer content than the first to
-                  show that equal height action.</p>
-                
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-          <a class="card-title">
-            SENIOR SCHOOL
-          </a>
-        </div>
-        <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
-          <div class="card-group">
-            <div class="card">
-              <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/vikas-sharma.jpeg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MR VIKAS SHARMA
-
-                </h5>
-                <p class="card-text">PGT – ACCOUNTANCY</p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top"
-                src="https://mayocollege.com/wp-content/uploads/2021/10/anjali-pankaj-narayan.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MS A. P. NARAYAN
-                </h5>
-                <p class="card-text">PGT – ECONOMICS</p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/manoj-kumar-gaur.jpeg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MR MANOJ KUMAR GAUR
-
-                </h5>
-                <p class="card-text">PGT – MATHEMATICS
-                </p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/vikas-sharma.jpeg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MR VIKAS SHARMA
-
-                </h5>
-                <p class="card-text">PGT – ACCOUNTANCY</p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top"
-                src="https://mayocollege.com/wp-content/uploads/2021/10/anjali-pankaj-narayan.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MS A. P. NARAYAN
-                </h5>
-                <p class="card-text">PGT – ECONOMICS</p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/manoj-kumar-gaur.jpeg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MR MANOJ KUMAR GAUR
-
-                </h5>
-                <p class="card-text">PGT – MATHEMATICS
-                </p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        <div id="accountancy" class="collapse" data-parent="#accordion">
+          <div class="row clear-fix">
+            <div class="large-8 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/vikas-sharma.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR VIKAS SHARMA</h5>
+                    <p class="card-text">PGT ACCOUNTANCY</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/nisha-singh.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS NISHA SINGH</h5>
+                    <p class="card-text">PGT ACCOUNTANCY</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/09/manisha-chauhan.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS MANISHA CHAUHAN</h5>
+                    <p class="card-text">PGT BUSINESS STUDIES</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/vinay-kumar.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR VINAY KUMAR</h5>
+                    <p class="card-text">PGT BUSINESS STUDIES</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#biology" href="#biology">
           <a class="card-title">
-            JUNIOR SCHOOL
+            BIOLOGY & GENERAL SCIENCE
           </a>
         </div>
-        <div id="collapseThree" class="collapse" data-parent="#accordion">
-          <div class="card-group">
-            <div class="card">
-              <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/11/rakhee.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MRS RAKHEE
-
-
-                </h5>
-                <p class="card-text">TGT – ENGLISH
-
-                </p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        <div id="biology" class="collapse" data-parent="#biology">
+          <div class="row clear-fix">
+            <div class="large-8 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2022/03/RKD-1-scaled-500x643.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR RAKESH KUMAR DHAIYA</h5>
+                    <p class="card-text">PGT BIOLOGY</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/paresh-mahawar.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR PARESH MAHAWAR</h5>
+                    <p class="card-text">PGT GENERAL SCIENCE</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/09/nitin-k-vashishtha.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR NITIN K VASHISHTHA</h5>
+                    <p class="card-text">PGT BIOLOGY</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/anita-pareek.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS ANITA PAREEK</h5>
+                    <p class="card-text">TGT GENERAL SCIENCE</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/kamlesh-kumar.jpeg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MR KAMLESH
-                  KUMAR
-
-                </h5>
-                <p class="card-text">PGT – ECONOMICS</p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            <div class="large-4 columns"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#chemistry" href="#chemistry">
+          <a class="card-title">
+            CHEMISTRY
+          </a>
+        </div>
+        <div id="chemistry" class="collapse" data-parent="#chemistry">
+          <div class="row clear-fix">
+            <div class="large-8 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/09/shalini-bhatnagar.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS SHALINI BHATNAGAR</h5>
+                    <p class="card-text">PGT CHEMISTRY</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/ravi-shankar.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR RAVI-SHANKAR</h5>
+                    <p class="card-text">PGT CHEMISTRY</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/10/ranjana-pareek.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS RANJANA PAREEK</h5>
+                    <p class="card-text">PGT CHEMISTRY</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/ritu-nautiyal-1.jpeg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MRS RITU
-                  NAUTIYAL
-
-                </h5>
-                <p class="card-text">TGT – GEOGRAPHY
-
-
-                </p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            <div class="large-4"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#computer" href="#computer">
+          <a class="card-title">
+            COMPUTER
+          </a>
+        </div>
+        <div id="computer" class="collapse" data-parent="#computer">
+          <div class="row clear-fix">
+            <div class="large-8 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/10/sandeep-mishra.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR SANDEEP MISHRA</h5>
+                    <p class="card-text">TGT COMPUTER</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/10/prakash-sharrma.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR PRAKASH SHARRMA</h5>
+                    <p class="card-text">PGT COMPUTER</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/himani-jain.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS HIMANI JAIN</h5>
+                    <p class="card-text">IP TEACHER SR SCHOOL</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/10/tarun-sharma.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR TARUN SHARMA</h5>
+                    <p class="card-text">TGT COMPUTER</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/surabhi-saxena.jpeg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MS SURABHI
-                  SAXENA
-
-
-                </h5>
-                <p class="card-text">PERFORMING ARTS TEACHER
-
-                </p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            <div class="large-4 columns"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#councelor" href="#councelor">
+          <a class="card-title">
+            COUNCELOR
+          </a>
+        </div>
+        <div id="councelor" class="collapse" data-parent="#councelor">
+          <div class="row clear-fix">
+            <div class="large-6 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/garimaa-sethi.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS GARIMAA SETHI</h5>
+                    <p class="card-text">SPECIAL EDUCATOR </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2022/06/Sapna-Goyal-e1655797791605.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS SAPNA GOYAL</h5>
+                    <p class="card-text">CAREER COUNSELOR</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top"
-                src="https://mayocollege.com/wp-content/uploads/2021/10/anjali-pankaj-narayan.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MS A. P. NARAYAN
-                </h5>
-                <p class="card-text">PGT – ECONOMICS</p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            <div class="large-6"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#economics" href="#economics">
+          <a class="card-title">
+            ECONOMICS
+          </a>
+        </div>
+        <div id="economics" class="collapse" data-parent="#economics">
+          <div class="row clear-fix">
+            <div class="large-6 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/sunil-gupta.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR SUNIL GUPTA</h5>
+                    <p class="card-text">PGT ECONOMICS </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/10/anjali-pankaj-narayan.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS ANJALI PANKAJ NARAYAN</h5>
+                    <p class="card-text">PGT ECONOMICS </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/09/mahender-singh-deora.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR MAHENDER SINGH DEORA</h5>
+                    <p class="card-text">PGT ECONOMICS </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/manoj-kumar-gaur.jpeg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MR MANOJ KUMAR GAUR
-
-                </h5>
-                <p class="card-text">PGT – MATHEMATICS
-                </p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            <div class="large-6"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#english" href="#english">
+          <a class="card-title">
+            ENGLISH
+          </a>
+        </div>
+        <div id="english" class="collapse" data-parent="#english">
+          <div class="large-12 columns">
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/achal-deep.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR ACHAL DEEP DUBEY</h5>
+                  <p class="card-text">PGT ENGLISH</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/kuntal-majumdar.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR KUNTAL MAJUMDAR</h5>
+                  <p class="card-text">PGT ENGLISH</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/sai-seba.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MS SAI SEBA PRANIGRAHI</h5>
+                  <p class="card-text">PGT ENGLISH</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/ujjwal-mukherjee.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR UJJWAL MUKHERJEE</h5>
+                  <p class="card-text">PGT ENGLISH</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/gaurav-kumar.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR GAURAV KUMAR</h5>
+                  <p class="card-text">PGT ENGLISH</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#art" href="#art">
           <a class="card-title">
-            ADMINISTRATIVE STAFF
+            ART
           </a>
         </div>
-        <div id="collapseFour" class="collapse" data-parent="#accordion">
-          <div class="card-group">
-            <div class="card">
-              <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/11/deepak-vashishtha.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MR DEEPAK VASHISHTHA
-
-                </h5>
-                <p class="card-text">NETWORK ADMIN</p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        <div id="art" class="collapse" data-parent="#art">
+          <div class="large-6 ">
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/alok-sharma.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR ALOK SHARMA</h5>
+                  <p class="card-text">PGT FINE ARTS</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/kaushik-kundi.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR KAUSHIK KUNDI</h5>
+                  <p class="card-text">PGT FINE ARTS</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/arijit-roy.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR ARIJIT ROY</h5>
+                  <p class="card-text">PGT FINE ARTS</p>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/11/akhilesh.jpg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">DR AKHILESH BHARDWAJ
-                </h5>
-                <p class="card-text">RESIDENT MEDICAL OFFICER
+          </div>
 
-                </p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#french" href="#french">
+          <a class="card-title">
+            FRENCH
+          </a>
+        </div>
+        <div id="french" class="collapse" data-parent="#french">
+          <div class="large-2">
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/kunal-kumar.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR KUNAL KUMAR</h5>
+                  <p class="card-text">PGT FRENCH LANGUAGE</p>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/manoj-kumar-gaur.jpeg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MR MANOJ KUMAR GAUR
+          </div>
+          <div class="large-6"></div>
+        </div>
 
-                </h5>
-                <p class="card-text">PGT – MATHEMATICS
-                </p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#geography" href="#geography">
+          <a class="card-title">
+            GEOGRAPHY
+          </a>
+        </div>
+        <div id="geography" class="collapse" data-parent="#geography">
+          <div class="row clear-fix">
+            <div class="large-6 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2022/06/Roma-Pradhan-scaled-e1655786391868.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">DR ROMA PRADHAN</h5>
+                    <p class="card-text">PGT GEOGRAPHY</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/mohit-kumar.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">DR ROMA PRADHAN</h5>
+                    <p class="card-text">PGT GEOGRAPHY</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/amit-yadav.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">DR ROMA PRADHAN</h5>
+                    <p class="card-text">PGT GEOGRAPHY</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/arzoo-chandila.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">DR ROMA PRADHAN</h5>
+                    <p class="card-text">TGT- SOCIAL SCIENCE</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/vikas-sharma.jpeg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MR VIKAS SHARMA
-
-                </h5>
-                <p class="card-text">PGT – ACCOUNTANCY</p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            <div class="large-6"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#german" href="#german">
+          <a class="card-title">
+            GERMAN
+          </a>
+        </div>
+        <div id="german" class="collapse" data-parent="#german">
+          <div class="row clear-fix">
+            <div class="large-2 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/pooja-ahlawat.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS POOJA-AHLAWAT</h5>
+                    <p class="card-text">PGT GERMAN LANGUAGE</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top"
-                src="https://mayocollege.com/wp-content/uploads/2021/10/anjali-pankaj-narayan.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MS A. P. NARAYAN
-                </h5>
-                <p class="card-text">PGT – ECONOMICS</p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            <div class="large-6"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#hindi" href="#hindi">
+          <a class="card-title">
+            HINDI
+          </a>
+        </div>
+        <div id="hindi" class="collapse" data-parent="#hindi">
+          <div class="row clear-fix">
+            <div class="large-6 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/10/rl-trivedi.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS GARIMAA SETHI</h5>
+                    <p class="card-text">SPECIAL EDUCATOR </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/tripti-pareek.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS SAPNA GOYAL</h5>
+                    <p class="card-text">CAREER COUNSELOR</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/vineet-kumar.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS SAPNA GOYAL</h5>
+                    <p class="card-text">CAREER COUNSELOR</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/manoj-kumar-gaur.jpeg"
-                alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">MR MANOJ KUMAR GAUR
+            <div class="large-6"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#history" href="#history">
+          <a class="card-title">
+            HISTORY
+          </a>
+        </div>
+        <div id="history" class="collapse" data-parent="#history">
+          <div class="row clear-fix">
+            <div class="large-8 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2022/12/mmm.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">DR MOHIT MOHAN MATHUR</h5>
+                    <p class="card-text">PGT HISTORY</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/09/harprabhjot-singh.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR HARPRABHJOT SINGH</h5>
+                    <p class="card-text">PGT HISTORY</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/10/priyanka-banerjee.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS PRIYANKA BANERJEE</h5>
+                    <p class="card-text">PGT HISTORY</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/preeti-joshi.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MRS PREETI JOSHI</h5>
+                    <p class="card-text">PGT HISTORY</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2022/08/Dr-Kanika-Mondal-1463x2048.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">DR KANIKA MONDAL</h5>
+                    <p class="card-text">COLLECTION MANAGER AND ARCHIVIST </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="large-4"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#mathematics" href="#mathematics">
+          <a class="card-title">
+            MATHEMATICS
+          </a>
+        </div>
+        <div id="mathematics" class="collapse" data-parent="#mathematics">
+          <div class="row clear-fix">
+            <div class="large-10 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/09/dinesh-kumar-soni.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR DINESH KUMAR SONI
+                    </h5>
+                    <p class="card-text">PGT MATHEMATICS </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/10/ashish-rawat.jpg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR ASHISH RAWAT
+                    </h5>
+                    <p class="card-text">PGT MATHEMATICS </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/roop-raj.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR ROOP RAJ
+                    </h5>
+                    <p class="card-text">PGT MATHEMATICS </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/09/manoj-kumar-gaur.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR MANOJ KUMAR GAUR
+                    </h5>
+                    <p class="card-text">PGT MATHEMATICS </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/09/dharmendra-kumar.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR DHARMENDRA KUMAR MISHRA
+                    </h5>
+                    <p class="card-text">PGT MATHEMATICS </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/ravi-yadav.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR RAVI YADAV
+                    </h5>
+                    <p class="card-text">PGT MATHEMATICS </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2022/04/Jyoti-Kanwar-500x643.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS JYOTI KANWAR
 
-                </h5>
-                <p class="card-text">PGT – MATHEMATICS
-                </p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </h5>
+                    <p class="card-text">PGT MATHEMATICS </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="large-4"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#music" href="#music">
+          <a class="card-title">
+            MUSIC
+          </a>
+        </div>
+        <div id="music" class="collapse" data-parent="#music">
+          <div class="row clear-fix">
+            <div class="large-6 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/09/anurag-p-vinayak.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR ANURAG P VINAYAK
+                    </h5>
+                    <p class="card-text">PGT WESTERN MUSIC
+
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="
+                      https://mayocollege.com/wp-content/uploads/2021/09/brij-bhan-vyas.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">DR BRIJ BHAN VYAS
+                    </h5>
+                    <p class="card-text">INDIAN MUSIC TEACHER
+
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/amjad-hussain.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR AMJAD HUSSAIN
+                    </h5>
+                    <p class="card-text">TGT MUSIC PERCUSSION (TABLA)
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="large-6"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#physical" href="#physical">
+          <a class="card-title">
+            PHYSICAL
+          </a>
+        </div>
+        <div id="physical" class="collapse" data-parent="#physical">
+          <div class="row clear-fix">
+            <div class="large-6 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/sheetal-savita.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR SHEETAL SAVITA
+
+                    </h5>
+                    <p class="card-text">PGT PHYSICAL EDUCATION </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/jitendra-singh.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR JITENDRA SINGH CHAUHAN
+
+                    </h5>
+                    <p class="card-text">PGT PHYSICAL EDUCATION </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="large-6"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#physics" href="#physics">
+          <a class="card-title">
+            PHYSICS
+          </a>
+        </div>
+        <div id="physics" class="collapse" data-parent="#physics">
+          <div class="row clear-fix">
+            <div class="large-6 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/rajesh-soni.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR RAJESH SONI
+                    </h5>
+                    <p class="card-text">TGT-PHYSICS</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/09/arvind-kumar-nahar.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR ARVIND KUMAR NAHAR
+                    </h5>
+                    <p class="card-text">TGT-PHYSICS</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/09/sanjay-choudhary.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR SANJAY CHOUDHARY
+                    </h5>
+                    <p class="card-text">TGT- SOCIAL SCIENCE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="large-6"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#political" href="#political">
+          <a class="card-title">
+            POLITICAL SCIENCE
+          </a>
+        </div>
+        <div id="political" class="collapse" data-parent="#political">
+          <div class="row clear-fix">
+            <div class="large-3 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2022/04/Harjeet-Singh-Bal-500x643.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR HARJEET SINGH
+
+                    </h5>
+                    <p class="card-text"> PGT-POLITICAL SCIENCE
+
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="large-6"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#pyscology" href="#pyscology">
+          <a class="card-title">
+            PSYCHOLOGY & COUNSELING (HEALTH AND WELLNESS)
+          </a>
+        </div>
+        <div id="pyscology" class="collapse" data-parent="#pyscology">
+          <div class="row clear-fix">
+            <div class="large-6 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/09/shashank-500x643.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR SHASHANK SHEKHAR
+                    </h5>
+                    <p class="card-text">PGT - PSYCHOLOGY</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/tanvi-sharma.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MS TANVI SHARMA
+                    </h5>
+                    <p class="card-text">PGT - PSYCHOLOGY AND HEALTH & WELLNESS</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="large-6"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#sanskrit" href="#sanskrit">
+          <a class="card-title">
+            SANSKRIT
+          </a>
+        </div>
+        <div id="sanskrit" class="collapse" data-parent="#sanskrit">
+          <div class="row clear-fix">
+            <div class="large-3 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/09/pawan-kumar-joshi.jpeg"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR PAWAN KUMAR JOSHI
+
+                    </h5>
+                    <p class="card-text"> PGT - SANSKRIT
+
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="large-6"></div>
+          </div>
+        </div>
+        <div class="card-header collapsed" data-toggle="collapse" data-parent="#yoga" href="#yoga">
+          <a class="card-title">
+            YOGA
+          </a>
+        </div>
+        <div id="yoga" class="collapse" data-parent="#yoga">
+          <div class="row clear-fix">
+            <div class="large-3 columns">
+              <div class="card-group">
+                <div class="card">
+                  <img class="card-img-top"
+                    src="https://mayocollege.com/wp-content/uploads/2021/09/virendra-sharma.jpeg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">MR VIRENDRA SHARMA
+
+                    </h5>
+                    <p class="card-text"> YOGA TEACHER
+
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="large-6"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+        <a class="card-title">
+          JUNIOR SCHOOL
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse" data-parent="#accordion">
+        <div class="row clear-fix" style="margin-left: 0; margin-right: 0;">
+          <div class="large-12 columns">
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/chitra-chauhan.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MS CHITRA
+                    CHAUHAN</h5>
+                  <p class="card-text">COMPUTER SC TEACHER</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/geti-johnson.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MRS GETI
+                    JOHNSON</h5>
+                  <p class="card-text">TGT-ENGLISH</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://mayocollege.com/wp-content/uploads/2021/09/jaishree-khushwaha.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MRS JAISHREE
+                    KUSHWAHA</h5>
+                  <p class="card-text">TGT-ENGLISH</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/keerti-khadgawat.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MS KEERTI
+                    KHADGAWAT</h5>
+                  <p class="card-text">TGT-ENGLISH</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/11/rakhee.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MS RAKHEE</h5>
+                  <p class="card-text">TGT-ENGLISH</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/rajendra-sharma.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR RAJENDRA SHARMA</h5>
+                  <p class="card-text">TGT-FINE ARTS</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2022/12/yogesh.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR YOGESH AADKINE</h5>
+                  <p class="card-text">TGT-FINE ARTS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="large-12 columns">
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/kamlesh-kumar.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR KAMLESH KUMAR </h5>
+                  <p class="card-text">TGT- GENERAL SCIENCE</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/riktendu-das.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR RIKTENDU DAS
+                  </h5>
+                  <p class="card-text">TGT-GENERAL SCIENCE</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/ritu-nautiyal-1.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MRS RITU NATUIYAL</h5>
+                  <p class="card-text">TGT-GEOGRAPHY</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://mayocollege.com/wp-content/uploads/2021/09/praveen-kumar-sharma.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR PRAVEEN
+                    KUMAR SHARMA</h5>
+                  <p class="card-text">TGT-HINDI & SANSKRIT
+
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://mayocollege.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-15-at-6.14.47-PM-e1671108472396.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MRS SALONI GOEL</h5>
+                  <p class="card-text">TGT-MATHEMATICS</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/surabhi-saxena.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MS SURBHI SAXENA</h5>
+                  <p class="card-text">PERFORMING ARTS TEACHER </p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/10/allahrakha-khan.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR ALLAH RAKHA</h5>
+                  <p class="card-text">TGT-MUSIC</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="large-6 columns">
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://mayocollege.com/wp-content/uploads/2022/12/bharat-jha-scaled-e1671001168371.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR BHARAT KUMA JHA</h5>
+                  <p class="card-text">TGT-MUSIC</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/digvijai-singh.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR DIGVIJAI SINGH</h5>
+                  <p class="card-text">TGT-SOCIAL STUDIES</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/sonal-gadhvi.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MRS SONAL GADHVI
+                    CHARAN
+                  </h5>
+                  <p class="card-text">TGT-SOCIAL STUDIES</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2022/12/FU-Chishty.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MS FARAH USMAN CHISHTY
+                  </h5>
+                  <p class="card-text">TGT-HISTORY</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+        <a class="card-title">
+          ADMINISTRATIVE STAFF
+        </a>
+      </div>
+      <div id="collapseFour" class="collapse" data-parent="#accordion" style="margin-left: 29px;">
+        <div class="row">
+          <div class="large-12 ">
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/11/akhilesh.jpg"
+                  alt="Card image cap">
+                <h5 class="card-title">DR AKHILESH BHARDWAJ</h5>
+                <p class="card-text">Resident Medical Officer </p>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/11/deepak-vashishtha.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR DEEPAK VASHISTHA</h5>
+                  <p class="card-text">NETWORK ADMINISTRATOR</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/11/anil-kumar.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR ANIL KUMAR</h5>
+                  <p class="card-text">JUNIOR ENGINEER</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/11/ashok-tarwan.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR ASHOK KUMAR TARWAN</h5>
+                  <p class="card-text">ACCOUNTANT</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/11/nikita.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MS NIKITA GOYAL
+                  </h5>
+                  <p class="card-text">ADMISSION INCHARGE</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://mayocollege.com/wp-content/uploads/2021/11/pratap-singh-bhati.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR PRATAP SINGH BHATI </h5>
+                  <p class="card-text">Mess Manager-SENIOR Mess
+
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://mayocollege.com/wp-content/uploads/2022/06/Prithvi-Singh-scaled-e1655709403572-500x643.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR PRITHVI SINGH</h5>
+                  <p class="card-text">PROCOTOR & SECURITY OFFICER</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 ">
+            <div class="card-group">
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/11/sanjay-bansal.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR SANJAY BANSAL</h5>
+                  <p class="card-text">STORE SUPERVISOR</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/amit-verma.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR AMIT VERMA</h5>
+                  <p class="card-text">Mess Manager-Junior Mess
+
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/devendra-singh.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR DEVENDRA SINGH JHALA
+                  </h5>
+                  <p class="card-text">LIBRARIAN</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/11/hameer-singh.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR HAMEER SINGH RATHORE
+                  </h5>
+                  <p class="card-text">MESS MANAGER-MIDDLE MESS</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://mayocollege.com/wp-content/uploads/2021/11/lokendra-singh-rathore.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR LOKENDRA SINGH RATHORE
+                  </h5>
+                  <p class="card-text">ESTATE OFFICER</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/11/sanjay-sogra.jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR SANJAY SOGRA</h5>
+                  <p class="card-text">PGT-GEOGRAPHY</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="https://mayocollege.com/wp-content/uploads/2021/09/rajat-goyal.jpeg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">MR RAJAT GOYAL</h5>
+                  <p class="card-text">PGT-GEOGRAPHY</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
-
-
-
 
 
   <!-- Optional JavaScript -->
