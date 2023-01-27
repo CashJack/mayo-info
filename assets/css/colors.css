@@ -56,13 +56,13 @@
 }
 .page-section-60,
 .menu-list li a .color--60 {
-  background: #999;
+  background: #000;
   /* background: url(https://images.pexels.com/photos/716398/pexels-photo-716398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
-  background-image: url("https://img.freepik.com/free-vector/blue-abstract-gradient-wave-vector-background_53876-111548.jpg?w=996&t=st=1674191091~exp=1674191691~hmac=0e090eb9eb86b7a0e06ebe04b6c45e5cee2f3fc1f28eb55c3aac9286c79079dcs");
+  /* background-image: url("https://img.freepik.com/free-vector/blue-abstract-gradient-wave-vector-background_53876-111548.jpg?w=996&t=st=1674191091~exp=1674191691~hmac=0e090eb9eb86b7a0e06ebe04b6c45e5cee2f3fc1f28eb55c3aac9286c79079dcs"); */
   background-attachment: fixed;
   background-size: contain;
   background-position: center;
-  color: black;
+  /* color: black; */
 }
 
 .page-section-41,
